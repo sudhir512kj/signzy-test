@@ -1,6 +1,6 @@
 var http = require('http'),
-	express = require('express'),
-	chatServer = require('./lib/chat-server');
+express = require('express'),
+chatServer = require('./lib/chat-server');
 
 var app = express();
 app.use(app.router);

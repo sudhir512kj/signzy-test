@@ -1,7 +1,7 @@
 {
-	"name": "chat",
-	"version": "0.0.1",
-	"description": "Minimalist chat",
+	"name": "signzy-chat",
+	"version": "1.0.0",
+	"description": "Signzy Test Chat app",
 	"dependencies": {
 		"socket.io": "~0.9.16",
 		"express": "~3.4.8",

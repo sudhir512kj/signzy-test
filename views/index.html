@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Node.js Chat</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
@@ -10,7 +10,12 @@
         <h1>Choose a nickname!</h1>
         <span id="nick-error"></span>
         <form id="choose-nickname">
-            <input type="text" id="nickname"></input>
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" id="nickname" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
         </form>
     </div>
 
@@ -21,13 +26,13 @@
             </div>
             <div class="clearfix visible-xs"></div>
             <div class="col-md-4" id="chat-col">
-                <div class="row" id="room"><h2>Lobby</h2></div>
+                <div class="row" id="room"><h2>Room</h2></div>
                 <div class="row" id="chat">
 
                 </div>
                 <div class="row">
                     <form id="send-message">
-                        <input type="text" id="new-message" autocomplete="off"></input>
+                        <input class="form-control form-control-lg" id="new-message" type="text" placeholder="Type your message here....">
                     </form>
                 </div>
             </div>
@@ -38,7 +43,7 @@
                 </div>
                 <div class="row">
                     <form id="send-pm">
-                        <input type="text" id="new-pm" autocomplete="off"></input>
+                            <input class="form-control form-control-lg" id="new-pm" type="text" placeholder="Type your message here....">
                     </form>
                 </div>
             </div>

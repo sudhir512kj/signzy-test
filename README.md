@@ -1,6 +1,6 @@
-nodejs-chat-complete
+## signzy-test-chat
 ====================
-This is the completed code for a Hackers @ Berkeley node.js workshop.
+Signzy test solution for peer-2-peer chat web app.
 
 Requirements
 ============
@@ -9,6 +9,6 @@ Requirements
 
 Usage
 ======
-1. Download dependencies by using `npm install`
+1. Install dependencies using `npm install`
 2. Run MongoDB: `mongod`
 3. Run `node server.js` (while MongoDB is also running)
